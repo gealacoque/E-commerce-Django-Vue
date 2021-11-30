@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STRIPE_SECRET_KEY = 'sk_test_51J743xDjRLX1exhducPInEimRxjs3MVXn2ryGCCfLVXiDV6hMnAdNp5gAi2Zxe7Utzew0zmW4gXHhHCk7rpSHc3500jdp2yTkm'
 
 # Application definition
 
@@ -44,11 +45,14 @@ INSTALLED_APPS = [
     'djoser',
 
     'product',
+    'order',
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -57,7 +57,7 @@ class Product(models.Model):
             else:
                 return ''
 
-    # Checar se há imagem naquele campo
+    # Checar se há imagem naquele campo e usar a url 
     def get_image(self):
         if self.image:
             return 'http://127.0.0.1:8000' + self.image.url
